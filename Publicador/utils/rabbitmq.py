@@ -1,7 +1,7 @@
 import pika
 
 class RabbitMQ:
-    URL_CONEXION = 'amqps://hnmrybcu:Q4MMohjaHfaIWjTbxmsMaSWFM8Inmagj@moose.rmq.cloudamqp.com/hnmrybcu'  # Tu URL real
+    URL_CONEXION = 'amqps://hnmrybcu:Q4MMohjaHfaIWjTbxmsMaSWFM8Inmagj@moose.rmq.cloudamqp.com/hnmrybcu'
 
     COLAS = ['pre_registro_db', 'pre_registro_correo']
 
@@ -18,7 +18,7 @@ class RabbitMQ:
                 routing_key=cola,
                 body=mensaje,
                 properties=pika.BasicProperties(
-                    delivery_mode=2,  # Persistente
+                    delivery_mode=2,
                 )
             )
         

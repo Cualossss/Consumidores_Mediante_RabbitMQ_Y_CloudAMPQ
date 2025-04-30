@@ -1,7 +1,7 @@
 import pika
 
 class RabbitMQ:
-    URL_CONEXION = 'amqps://hnmrybcu:Q4MMohjaHfaIWjTbxmsMaSWFM8Inmagj@moose.rmq.cloudamqp.com/hnmrybcu'  # Reemplazar con tu URL real
+    URL_CONEXION = 'amqps://hnmrybcu:Q4MMohjaHfaIWjTbxmsMaSWFM8Inmagj@moose.rmq.cloudamqp.com/hnmrybcu'
     COLA = 'pre_registro_db'
 
     @staticmethod
